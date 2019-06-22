@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>דף הבית | עולם התבלינים</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="תבלינים, עולם התבלינים, לגלות, טעמים, תבלינים מהעולם, מתכונים, תבלינים מיוחדים, מטבחים מהעולם" />
+    <meta name="author" content="מאי פריד" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- CSS -->
+    <link href="bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="logo_full">
+                <a href="index.html">
+                    <img id="logo_img" src="images/favicon.png" alt="לוגו של מכתש ועלי">
+                    <div class="logo_txt">
+                        <h1>עולם התבלינים</h1>
+                        <p id="tagline">תבלינים חובקי עולם</p>
+                    </div>
+                </a>
+            </div>
+            <div id="nav">
+                <nav role="navigation">
+                    <ul id="main_menu">
+                        <li>
+                            <a class="not_link" href='#'>לפי מטבחים<span class="arrow" /></a>
+                            <ul class="submenu">
+                                <li><a class="notActive" href="#">אמריקאי</a></li>
+                                <li><a class="notActive" href="#">אסייתי</a></li>
+                                <li><a href="MediterraneanCuisine.html">ים תיכוני</a></li>
+                                <li><a class="notActive" href="#">אפריקאי</a></li>
+                                <li><a class="notActive" href="#">אירופאי</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="notActive" href="#">כל התבלינים<span class="arrow" /></a>
+                            <ul class="submenu">
+                                <li><a class="notActive" href="#">גאראם מאסלה</a></li>
+                                <li><a class="notActive" href="#">בהרט</a></li>
+                                <li><a href="zaatar.html">זעתר</a></li>
+                                <li><a class="notActive" href="#">כמון</a></li>
+                                <li><a class="notActive" href="#">עוד...</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="notActive" href="#">כל המתכונים<span class="arrow" /></a>
+                            <ul class="submenu">
+                                <li><a class="notActive" href="#">טאקו אל פסטור</a></li>
+                                <li><a class="notActive" href="#">פאן דה יוקה</a></li>
+                                <li><a class="notActive" href="#">קציצות בלחת</a></li>
+                                <li><a class="notActive" href="#">דונבורי</a></li>
+                                <li><a class="notActive" href="#">עוד...</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="banner">
+            <div id="carousel_banner" class="carousel slide" data-ride="carousel" data-interval="60000">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel_banner" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel_banner" data-slide-to="1"></li>
+                    <li data-target="#carousel_banner" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/b1.jpg" alt="שוק תבלינים בפטרה, ירדן">
+                        <div class="location">
+                            <span class="map_mark"></span> <p class="bold">פטרה, ירדן</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/b2.jpg" alt="שוק תבלינים במרוקו, מרקש">
+                        <div class="location">
+                            <span class="map_mark"></span> <p class="bold">מרוקו, מרקש</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/b3.jpg" alt="שוק תבלינים בדלהי, הודו">
+                        <div class="location">
+                            <span class="map_mark"></span> <p class="bold">דלהי, הודו</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel_banner" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel_banner" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="main">
+            <section>
+                <h2>מטבחים מרחבי העולם</h2>
+                <ul>
+                    <li class="right"><a class="notActive hvr-grow" href="#"><p id="europe_txt" class="plates_txt">אירופאי</p><img src="images/europe2.png" class="plates" alt="צלחת אירופאית" /></a></li>
+                    <li class="center"><a class="hvr-grow" href="#"><p id="meditern_txt" class="plates_txt">ים תיכוני</p><img src="images/mediterranean2.png" class="plates" alt="צלחת ים תיכונית" /></a></li>
+                    <li><a class="notActive hvr-grow" href="#"><p id="asia_txt" class="plates_txt">אסייתי</p><img src="images/asia2.png" class="plates" alt="צלחת אסייתית" /></a></li>
+                    <li id="row2" class="right"><a class="notActive hvr-grow" href="#"><p id="africa_txt" class="plates_txt">אפריקאי</p><img src="images/africa2.png" class="plates" alt="צלחת אפריקאית" /></a></li>
+                    <li class="center"><a class="notActive hvr-grow" href="#"><p id="america_txt" class="plates_txt">אמריקאי</p><img src="images/america2.png" class="plates" alt="צלחת אמריקאית" /></a></li>
+                </ul>
+            </section>
+        </div>
+
+        <div id="scroll_img"></div>
+
+        <div class="main">
+            <section>
+                <h2>תבלינים מרחבי העולם</h2>
+                <ul>
+                    <li class="right"><a class="notActive hvr-grow" href="#"><p id="curry_txt" class="plates_txt">קארי</p><img src="images/curry.png" class="plates" alt="קארי" /></a></li>
+                    <li class="center"><a class="notActive hvr-grow" href="#"><p id="turmeric_txt" class="plates_txt">כורכום</p><img src="images/turmeric.png" class="plates" alt="כורכום" /></a></li>
+                    <li><a class="hvr-grow" href="#"><p id="zaatar_txt" class="plates_txt">זעתר</p><img src="images/zaatar.png" class="plates" alt="זעתר" /></a></li>
+                    <li id="row2" class="right"><a class="notActive hvr-grow" href="#"><p id="ginger_txt" class="plates_txt">ג'ינג'ר</p><img src="images/ginger.png" class="plates" alt="ג'ינגר" /></a></li>
+                    <li class="center"><a class="notActive hvr-grow" href="#"><p id="saffron_txt" class="plates_txt">זעפרן</p><img src="images/saffron.png" class="plates" alt="זעפרן" /></a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>מתכונים מרחבי העולם</h2>
+                <ul>
+                    <li><a href="#">אחיאקו</a></li>
+                    <li><a href="#">סלט פפאיה</a></li>
+                    <li><a href="#">טאקו אל פסטור</a></li>
+                    <li><a href="#">עוף טנדורי</a></li>
+                    <li><a href="#">פאייה</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <footer class="page_footer">
+            <ul>
+                <li><a href="#"><h3>אודות</h3></a></li>
+                <li><a href="#"><h3>צרו קשר</h3></a></li>
+                <li><a href="#"><h3>מפת אתר</h3></a></li>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,383 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Assistant|Heebo&display=swap');
+
+@font-face {
+    font-family: 'gveret_levin_alefalefalefRg';
+    src: url('gveretlevinalefalefalef-regular-webfont.eot');
+    src: url('gveretlevinalefalefalef-regular-webfont.eot?#iefix') format('embedded-opentype'), url('gveretlevinalefalefalef-regular-webfont.woff2') format('woff2'), url('gveretlevinalefalefalef-regular-webfont.woff') format('woff'), url('gveretlevinalefalefalef-regular-webfont.ttf') format('truetype'), url('gveretlevinalefalefalef-regular-webfont.svg#gveret_levin_alefalefalefRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    direction: rtl;
+    color: #121619;
+    background-image: url('../images/home_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#container {
+    margin: 0 auto;
+    position: relative;
+    z-index: 0;
+    font-family: Heebo, sans-serif;
+}
+
+.notActive {
+    cursor: not-allowed;
+}
+
+a.not_link {
+    cursor: default;
+}
+
+a {
+    color: #121619;
+}
+
+    a:link {
+        text-decoration: none;
+        font-family: Heebo, sans-serif;
+    }
+
+.bold {
+    font-weight: 600;
+}
+
+/**********ניווט ולוגו**********/
+
+header {
+    width: 1366px;
+    height: 100px;
+    margin: 0 auto;
+    padding-top: 12px;
+    /*background-color: aqua;*/
+}
+
+/*לוגו*/
+
+#logo_full {
+    padding: 5px 5px;
+    position: relative;
+    /* background-color: khaki; */
+    width: 365px;
+    display: inline-block;
+}
+
+    #logo_full a {
+        width: 100%;
+        /* height: 87px; */
+        /* background-color: blue; */
+        position: relative;
+        display: inline-block;
+    }
+
+#logo_img {
+    height: 80px;
+    float: right;
+}
+
+.logo_txt {
+    float: right;
+    color: #121619;
+    position: relative;
+    padding-right: 15px;
+    padding-top: 3px;
+    /* background-color: aqua; */
+}
+
+h1 {
+    font-family: 'Gveret Levin AlefAlefAlef', gveret_levin_alefalefalefRg, sans-serif;
+    font-size: 39px;
+    letter-spacing: 2px;
+}
+
+p#tagline {
+    font-family: Heebo, sans-serif;
+    font-size: 21px;
+    letter-spacing: 1.5px;
+    position: relative;
+    top: 12px;
+    text-align: center;
+}
+
+/*ניווט*/
+
+.arrow {
+    background-image: url(../images/arrow.png);
+    background-size: 100% 100%;
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 9px;
+    right: 13px;
+    top: -1.9px;
+}
+
+div#nav {
+    float: left;
+    position: relative;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+nav ul li {
+    display: inline-block;
+    float: right;
+}
+
+    nav ul li a {
+        display: block;
+        /* background-color: white; */
+        font-size: 21px;
+        color: #121619;
+        width: 200px;
+        height: 50px;
+        text-decoration: none;
+        text-align: center;
+        padding: 16px 0px;
+    }
+
+        nav ul li a:hover {
+            background-color: #bbbbbb;
+            color: #121619;
+            transition: 0.3s ease;
+        }
+
+        nav ul li a:active {
+            background-color: dimgrey;
+            color: #121619;
+        }
+
+    nav ul li ul {
+        display: none;
+        position: absolute;
+    }
+
+        nav ul li ul li a {
+            font-size: 18px;
+            padding: 17px 0px;
+            background-color: white;
+        }
+
+.navCurrent {
+    background-color: lightgray;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    width: 120px;
+}
+
+#main_menu > li:hover > a {
+    background-color: #bbbbbb;
+}
+
+/*______________________________*/
+/**********קרוסלה - תמונה גדולה**********/
+.banner {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.map_mark {
+    background-image: url(../images/location.png);
+    background-size: 100% 100%;
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 29px;
+    right: 21px;
+    top: 5px;
+}
+
+.location {
+    width: fit-content;
+    height: 55px;
+    position: absolute;
+    /*display: inline-block;*/
+    bottom: 50px;
+    right: 50px;
+    background-color: ghostwhite;
+    border-radius: 25px;
+}
+
+    .location p {
+        display: inline-block;
+        font-family: Heebo;
+        font-size: 22px;
+        top: 3.5px;
+        right: 0px;
+        position: relative;
+        padding: 15px 25px 12px 28px;
+    }
+
+/*______________________________*/
+
+/**********תוכן עיקרי**********/
+
+.main h2 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: 500;
+    font-family: Heebo, sans-serif;
+    padding: 50px 0px;
+    letter-spacing: 0.3px;
+    word-spacing: 1.3px;
+}
+
+.main {
+    width: 1366px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    /*background-color: antiquewhite;*/
+}
+
+    .main ul li {
+        display: inline-block;
+    }
+
+        .main ul li a {
+            float: right;
+            display: block;
+            position: relative;
+            text-align: center;
+            /*background-color: lightblue;*/
+            font-size: 30px;
+            margin: 0px 0px 60px 0px;
+        }
+
+            .main ul li a:hover {
+                color: #121619;
+            }
+
+            .main ul li a p.plates_txt {
+                /* display: inline-block; */
+                font-size: 28px;
+                position: absolute;
+                top: 78.4%;
+                left: 53.5%;
+                transform: translate(-50%, -50%);
+                font-family: 'Gveret Levin AlefAlefAlef', Assistant, sans-serif;
+                letter-spacing: 0.5px;
+            }
+
+            .main ul li a #europe_txt {
+                margin: 0px 0px 0px -8px;
+            }
+
+            .main ul li a #meditern_txt {
+                margin: -1px 0px 0px -11px;
+            }
+
+            .main ul li a #asia_txt {
+                margin: -1px 0px 0px -20px;
+            }
+
+            .main ul li a #africa_txt {
+                margin: 0px 0px 0px -12px;
+            }
+
+            .main ul li a #america_txt {
+                margin: 0px 0px 0px -13px;
+            }
+
+    .main .plates {
+        width: 280px;
+        padding-top: 25px;
+    }
+
+    .main ul li.center {
+        margin: 0px 155px;
+    }
+
+    .main ul li#row2 {
+        margin: 0px 320px 0px 10px;
+    }
+
+    .main ul li.right {
+        margin: 0px 100px 0px 6px;
+    }
+
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+    .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+/*______________________________*/
+
+
+/**********תמונת אווירה**********/
+
+div#scroll_img {
+    height: 250px;
+    max-width: 1920px;
+    background-image: url('../images/cover.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0 auto;
+}
+
+/*______________________________*/
+
+
+/**********פוטר**********/
+
+footer {
+    background-color: #893630;
+    margin-top: 120px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+    footer ul {
+        list-style: none;
+        width: 960px;
+        margin: 0 auto;
+    }
+
+        footer ul li {
+            display: inline-block;
+            float: right;
+            margin: 20px 0px;
+            width: 320px;
+        }
+
+            footer ul li a {
+                display: block;
+                color: whitesmoke;
+                text-align: center;
+                width: 115px;
+                height: 60px;
+                Padding: 15px 0px;
+                font-size: 24px;
+                font-weight: 400;
+                margin: 0 auto;
+            }
+
+                footer ul li a h3 {
+                    font-family: Assistant, sans-serif;
+                    color: #F4F7F2;
+                    letter-spacing: 0.5px;
+                }
+
+                footer ul li a:hover h3 {
+                    font-family: Assistant, sans-serif;
+                    color: #1B1B1B;
+                }
