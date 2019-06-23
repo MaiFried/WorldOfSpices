@@ -1,9 +1,12 @@
 ﻿@import url('https://fonts.googleapis.com/css?family=Assistant|Heebo&display=swap');
 
 @font-face {
-    font-family: 'gveret_levin_alefalefalefRg';
-    src: url('gveretlevinalefalefalef-regular-webfont.eot');
-    src: url('gveretlevinalefalefalef-regular-webfont.eot?#iefix') format('embedded-opentype'), url('gveretlevinalefalefalef-regular-webfont.woff2') format('woff2'), url('gveretlevinalefalefalef-regular-webfont.woff') format('woff'), url('gveretlevinalefalefalef-regular-webfont.ttf') format('truetype'), url('gveretlevinalefalefalef-regular-webfont.svg#gveret_levin_alefalefalefRg') format('svg');
+    font-family: 'gveretlevin_alefalefalef';
+    src: url('../css/gveretlevinalefalefalef-regular-webfont.ttf') format('truetype'),
+    url('../css/gveretlevinalefalefalef-regular-webfont.woff') format('woff'),
+    url('../css/gveretlevinalefalefalef-regular-webfont.eot') format('embedded-opentype'),
+    url('../css/gveretlevinalefalefalef-regular-webfont.svg') format('svg'),
+    url('../css/gveretlevinalefalefalef-regular-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -75,30 +78,29 @@ header {
 #logo_img {
     height: 80px;
     float: right;
+    padding-left: 28px;
 }
 
 .logo_txt {
-    float: right;
+    padding-top: 3.3px;
     color: #121619;
-    position: relative;
-    padding-right: 15px;
-    padding-top: 3px;
     /* background-color: aqua; */
 }
 
 h1 {
-    font-family: 'Gveret Levin AlefAlefAlef', gveret_levin_alefalefalefRg, sans-serif;
+    font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Assistant, sans-serif;
     font-size: 39px;
     letter-spacing: 2px;
 }
 
 p#tagline {
-    font-family: Heebo, sans-serif;
+    font-family: Heebo, Assistant, sans-serif;
     font-size: 21px;
     letter-spacing: 1.5px;
     position: relative;
     top: 12px;
     text-align: center;
+    padding-left: 9px;
 }
 
 /*ניווט*/
@@ -204,7 +206,7 @@ nav ul li:hover > ul {
 
     .location p {
         display: inline-block;
-        font-family: Heebo;
+        font-family: Heebo, Assistant, sans-serif;
         font-size: 22px;
         top: 3.5px;
         right: 0px;
@@ -220,7 +222,7 @@ nav ul li:hover > ul {
     font-size: 45px;
     text-align: center;
     font-weight: 500;
-    font-family: Heebo, sans-serif;
+    font-family: Heebo, Assistant, sans-serif;
     padding: 50px 0px;
     letter-spacing: 0.3px;
     word-spacing: 1.3px;
@@ -259,7 +261,7 @@ nav ul li:hover > ul {
                 top: 78.4%;
                 left: 53.5%;
                 transform: translate(-50%, -50%);
-                font-family: 'Gveret Levin AlefAlefAlef', Assistant, sans-serif;
+                font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Assistant, sans-serif;
                 letter-spacing: 0.5px;
             }
 
