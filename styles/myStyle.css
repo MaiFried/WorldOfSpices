@@ -237,36 +237,43 @@ nav ul li:hover > ul {
     }
 
 article .header_content_page {
-    /*max-width: 1920px;*/
     margin: 0 auto;
     position: relative;
     display: block;
 }
 
     article .header_content_page .img_content_header {
-        height: 450px;
+        height: 480px;
         overflow: hidden;
         top: 0;
-        background: url('../images/zaatar.jpg') no-repeat;
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
     }
 
-#zaatar_article header h2 {
+
+#zaatar_article .header_content_page .img_content_header {
+    background-image: url('../images/zaatar.jpg');
+}
+#mediterranean_article .header_content_page .img_content_header {
+    background-image: url('../images/mediterranean.png');
+}
+
+article header h2 {
     font-family: Heebo, Assistant, sans-serif;
     font-size: 67px;
     font-weight: bold;
     letter-spacing: 1px;
     color: #F5F5F5;
     position: absolute;
-    top: 28%;
+    top: 27%;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 100%;
     padding: 25px 0px;
 }
 
-#zaatar_article header p {
+article header p {
     width: 1366px;
     margin: 0 auto;
     font-family: Heebo, Assistant, sans-serif;
@@ -306,7 +313,7 @@ article header nav ol li {
 
 .breadcrumb_nav {
     position: relative;
-    top: -432px;
+    top: -462px;
     right: 20px;
     max-width: 1920px;
     margin: 0 auto;
@@ -389,7 +396,7 @@ article header nav ol li {
         }
 
     .article section .recipe {
-        margin: 50px 0px;
+        margin: 0px 0px 55px 0px;
     }
 
 /*עיצוב תמונות במאמרים בעמודי תוכן*/
@@ -466,12 +473,17 @@ div.scroll_img {
         height: 200px;
     }
 
+    div.scroll_img#img_meditrn_1 {
+        background-image: url('../images/salad.jpg');
+        margin: 0 auto 50px;
+        margin-top: 50px;
+        height: 200px;
+    }
+
+
 
 /*______________________________*/
-
-
 /*______________מעבר עכבר על תמונות________________*/
-
 /********* Simple or original overlay *******/
 /* Main container */
 .overlay-image {
@@ -602,7 +614,7 @@ div.scroll_img {
 
 footer {
     background-color: #893630;
-    margin-top: 120px;
+    margin-top: 100px;
     height: 100px;
     margin-bottom: 20px;
 }
