@@ -10,9 +10,10 @@
 body {
     direction: rtl;
     color: #121619;
-    background-image: url('../images/home_bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; /* Resize the background image to cover the entire container */
+    /*background-image: url('../images/home_bg.jpg');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover; /* Resize the background image to cover the entire container */
+    background-color: #f2f2f2;
 }
 
 #container {
@@ -30,22 +31,14 @@ a.not_link {
     cursor: default;
 }
 
-a {
-    color: #121619;
+a:link {
+    text-decoration: none;
 }
 
-    a:link {
-        text-decoration: none;
-        font-family: Heebo, sans-serif;
-    }
-
-.bold {
-    font-weight: 600;
-}
 
 /**********ניווט ולוגו**********/
 
-header {
+#main_header {
     width: 1366px;
     height: 100px;
     margin: 0 auto;
@@ -134,11 +127,15 @@ nav ul li {
         text-decoration: none;
         text-align: center;
         padding: 16px 0px;
+        font-family: Heebo, sans-serif;
     }
 
         nav ul li a:hover {
             background-color: #bbbbbb;
             color: #121619;
+            -webkit-transition: 0.3s ease;
+            -moz-transition: 0.3s ease;
+            -o-transition: 0.3s ease;
             transition: 0.3s ease;
         }
 
@@ -172,6 +169,7 @@ nav ul li:hover > ul {
 }
 
 /*______________________________*/
+
 /**********קרוסלה - תמונה גדולה**********/
 .banner {
     max-width: 1920px;
@@ -208,21 +206,12 @@ nav ul li:hover > ul {
         right: 0px;
         position: relative;
         padding: 15px 25px 12px 28px;
+        font-weight: 600;
     }
 
 /*______________________________*/
 
 /**********תוכן עיקרי**********/
-
-.main h2 {
-    font-size: 45px;
-    text-align: center;
-    font-weight: 500;
-    font-family: Heebo, Assistant, sans-serif;
-    padding: 50px 0px;
-    letter-spacing: 0.3px;
-    word-spacing: 1.3px;
-}
 
 .main {
     width: 1366px;
@@ -232,119 +221,226 @@ nav ul li:hover > ul {
     /*background-color: antiquewhite;*/
 }
 
-    .main ul li {
-        display: inline-block;
+    .main h2 {
+        font-size: 45px;
+        text-align: center;
+        font-weight: 500;
+        font-family: Heebo, Assistant, sans-serif;
+        padding: 50px 0px;
+        letter-spacing: 0.3px;
+        word-spacing: 1.3px;
     }
-
-        .main ul li a {
-            float: right;
-            display: block;
-            position: relative;
-            text-align: center;
-            /*background-color: lightblue;*/
-            font-size: 30px;
-            margin: 0px 0px 60px 0px;
-        }
-
-            .main ul li a:hover {
-                color: #121619;
-            }
-
-            .main ul li a p.plates_txt {
-                /* display: inline-block; */
-                font-size: 28px;
-                position: absolute;
-                top: 79.2%;
-                left: 53.5%;
-                transform: translate(-50%, -50%);
-                font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Assistant, sans-serif;
-                letter-spacing: 0.5px;
-            }
-
-            .main ul li a #europe_txt {
-                margin: 0px 0px 0px -8px;
-            }
-
-            .main ul li a #meditern_txt {
-                margin: -1px 0px 0px -11px;
-            }
-
-            .main ul li a #asia_txt {
-                margin: -1px 0px 0px -20px;
-            }
-
-            .main ul li a #africa_txt {
-                margin: 0px 0px 0px -12px;
-            }
-
-            .main ul li a #america_txt {
-                margin: 0px 0px 0px -13px;
-            }
-
-            .main ul li a #curry_txt {
-                margin: -1px 0px 0px -15px;
-            }
-
-            .main ul li a #turmeric_txt {
-                margin: -0px 0px 0px -15px;
-            }
-
-            .main ul li a #zaatar_txt {
-                margin: -1px 0px 0px -21px;
-            }
-
-            .main ul li a #ginger_txt {
-                margin: -1px 0px 0px -15px;
-            }
-
-            .main ul li a #saffron_txt {
-                margin: -1px 0px 0px -15px;
-            }
 
     .main .plates {
         width: 280px;
         padding-top: 25px;
     }
 
-    .main ul li.center {
-        margin: 0px 155px;
+article .header_content_page {
+    /*max-width: 1920px;*/
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+    article .header_content_page .img_content_header {
+        height: 450px;
+        overflow: hidden;
+        top: 0;
+        background: url('../images/zaatar.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
-    .main ul li#row2 {
-        margin: 0px 320px 0px 10px;
+#zaatar_article header h2 {
+    font-family: Heebo, Assistant, sans-serif;
+    font-size: 67px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #F5F5F5;
+    position: absolute;
+    top: 28%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    padding: 25px 0px;
+}
+
+#zaatar_article header p {
+    width: 1366px;
+    margin: 0 auto;
+    font-family: Heebo, Assistant, sans-serif;
+    font-size: 26px;
+    line-height: 46px;
+    color: #121619;
+    text-align: justify;
+    padding: 50px 100px 10px 100px;
+}
+
+/*עיצוב תפריט פירורי לחם*/
+article header nav ol li {
+    display: inline-block; /*תפריט אופקי*/
+}
+
+    article header nav ol li a {
+        font-family: Heebo, Assistant, sans-serif;
+        font-size: 19px;
+        color: #f2f2f2;
     }
 
-    .main ul li.right {
-        margin: 0px 100px 0px 6px;
+        article header nav ol li a:hover {
+            color: #f2f2f2;
+            text-decoration: underline;
+        }
+
+    article header nav ol li:after {
+        content: ">";
+        font-family: Heebo, Assistant, sans-serif;
+        font-size: 19px;
+        color: #f2f2f2;
+    }
+
+    article header nav ol li:last-child:after {
+        content: "";
+    }
+
+.breadcrumb_nav {
+    position: relative;
+    top: -432px;
+    right: 20px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/*_______________*/
+
+.article .icon { /*עיצוב כל האייקונים*/
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.article #uses { /*אייקון - שימושים*/
+    background-image: url('../images/uses.png');
+}
+
+.article #ingredient { /*אייקון - רכיבים*/
+    background-image: url('../images/ingredient.png');
+}
+
+.article #origin { /*אייקון - ארץ מוצא*/
+    background-image: url('../images/origin.png');
+}
+
+.article #tips { /*אייקון - טיפים לבישול*/
+    background-image: url('../images/tip.png');
+}
+
+.article #warning { /*אייקון - אזהרות*/
+    background-image: url('../images/warning.png');
+}
+
+.article #more_info { /*אייקון - מידע נוסף*/
+    background-image: url('../images/more.png');
+}
+
+.article #recipe { /*אייקון - מתכונים מומלצים*/
+    background-image: url('../images/recommend.png');
+}
+
+
+.article section {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 65px 0px;
+}
+
+    .article section h3,
+    .article section h3 strong { /*כותרות משניות בתוך המאמרים שבעמודי תוכן */
+        font-family: Assistant, Heebo, sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.4px;
+    }
+
+    .article section p { /*פסקאות בתוך המאמרים שבעמודי תוכן*/
+        font-family: Assistant, Heebo, sans-serif;
+        font-size: 24px;
+        text-align: justify;
+        line-height: 42px;
+    }
+
+    .article section ul li {
+        font-family: Assistant, Heebo, sans-serif;
+        font-size: 24px;
+        text-align: justify;
+        line-height: 42px;
+        list-style: none;
+    }
+
+        .article section ul li .bold {
+            font-family: Assistant, Heebo, sans-serif;
+            font-weight: bold
+        }
+
+    .article section .recipe {
+        margin: 50px 0px;
+    }
+
+/*עיצוב תמונות במאמרים בעמודי תוכן*/
+
+article .article_images_container {
+    padding: 30px 0px 60px 0px;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+article .article_images {
+    height: 350px;
+    border-radius: 100px;
+    overflow: hidden;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+    article .article_images#img_zaatar_4 {
+        background-image: url('../images/zaatar4.png');
     }
 
 
+/*___________________________________________________________________________________________________*/
+/**********  הגדלת אלמנט במעבר עכבר  **********/
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
     -webkit-transition-property: transform;
     transition-property: transform;
 }
 
     .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
     }
 
-
-
-
 /*______________________________*/
-/**********תמונת אווירה**********/
-div#scroll_img {
+
+
+/**********  תמונות אווירה  **********/
+div.scroll_img {
     height: 250px;
     max-width: 1920px;
-    background-image: url('../images/cover.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -352,10 +448,157 @@ div#scroll_img {
     margin: 0 auto;
 }
 
+    div.scroll_img#home_page {
+        background-image: url('../images/cover.jpg');
+    }
+
+    div.scroll_img#img_zaatar_1 {
+        background-image: url('../images/zaatar1.jpg');
+        margin: 0 auto 50px;
+        margin-top: 50px;
+        height: 200px;
+    }
+
+    div.scroll_img#img_zaatar_2 {
+        background-image: url('../images/zaatar2.jpg');
+        margin: 0 auto 50px;
+        margin-top: 50px;
+        height: 200px;
+    }
+
+
 /*______________________________*/
 
 
-/**********פוטר**********/
+/*______________מעבר עכבר על תמונות________________*/
+
+/********* Simple or original overlay *******/
+/* Main container */
+.overlay-image {
+    position: relative;
+    width: 280px;
+    margin: 25px 80px 60px 0px;
+    z-index: 0;
+}
+    /* Original image */
+    .overlay-image .plates_img {
+        display: block;
+        width: 280px;
+        height: auto;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        transition: 0.5s ease;
+    }
+    /* Original text overlay */
+    .overlay-image .text_before {
+        color: #121619;
+        font-size: 28px;
+        text-align: center;
+        position: absolute;
+        top: 71.4%;
+        left: -2%;
+        width: 100%;
+    }
+
+        .overlay-image .text_before h3 {
+            font-family: 'Gveret Levin AlefAlefAlef', Heebo, sans-serif;
+            letter-spacing: 1px;
+            font-weight: normal;
+        }
+
+        .overlay-image .text_before h4 {
+            font-family: 'Gveret Levin AlefAlefAlef', Heebo, sans-serif;
+            font-size: 25px;
+            margin: 2px 0px;
+        }
+
+
+/********* Overlay on hover *******/
+/* New overlay on hover */
+.spices .overlay-image .hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+/* New overlay appearance on hover */
+.spices .overlay-image:hover .hover {
+    opacity: 1;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+
+/********* Background and text only overlay on hover *******/
+.spices .overlay-image .text_after {
+    color: #121619;
+    font-size: 21px;
+    line-height: 1.4;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 77%;
+}
+
+    .spices .overlay-image .text_after p {
+        font-family: Assistant, Heebo, sans-serif;
+        font-weight: 600;
+        word-spacing: 1px;
+        letter-spacing: 0.1px;
+    }
+
+.spices .overlay-image .normal {
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.spices .overlay-image:hover .normal {
+    opacity: 0.2;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.spices .overlay-image:hover .plates_img {
+    opacity: 0.15;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+
+#spices_fade {
+    position: absolute;
+    display: block;
+    background-color: #F2F2F2;
+    opacity: 0.9;
+    width: 1366px;
+    height: 615px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+/*______________________________*/
+
+
+
+
+/**********  פוטר  **********/
 
 footer {
     background-color: #893630;
@@ -379,132 +622,27 @@ footer {
 
             footer ul li a {
                 display: block;
-                color: whitesmoke;
+                color: #f2f2f2;
                 text-align: center;
                 width: 115px;
                 height: 60px;
                 Padding: 15px 0px;
-                font-size: 24px;
+                font-size: 22px;
                 font-weight: 400;
                 margin: 0 auto;
             }
 
-                footer ul li a h3 {
+                footer ul li a h4,
+                footer ul li a h5 {
                     font-family: Assistant, sans-serif;
-                    color: #F4F7F2;
+                    color: #F5F5F5;
                     letter-spacing: 0.5px;
                 }
 
-                footer ul li a:hover h3 {
+                footer ul li a:hover h4,
+                footer ul li a:hover h5 {
                     font-family: Assistant, sans-serif;
                     color: #1B1B1B;
                 }
 
-
-
-
-/*______________נסיון בדיקה להובר תמונה________________*/
-
-li.image_container {
-    width: 280px;
-    position: relative;
-}
-
-
-    li.image_container .plates {
-        width: 280px;
-        /*padding-top: 25px;*/
-        opacity: 1;
-        display: block;
-        height: auto;
-        transition: .5s ease;
-        backface-visibility: hidden;
-    }
-
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    width: 78%;
-}
-
-li.image_container:hover .plates {
-    opacity: 0.15;
-}
-
-li.image_container:hover .middle {
-    opacity: 1;
-}
-
-.text {
-    color: #121619;
-    font-size: 20px;
-    /*background-color: darkslategray;*/
-    /*border-radius: 52px;*/
-    /*padding: 33px 32px;*/
-    font-family: Assistant;
-}
-
-
-
-
-
-/********* Simple or original overlay *******/
-/* Main container */
-.overlay-image {
-    position: relative;
-    width: 350px;
-}
-    /* Original image */
-    .overlay-image .image {
-        display: block;
-        width: 350px;
-        height: auto;
-    }
-    /* Original text overlay */
-    .overlay-image .text {
-        color: #fff;
-        font-size: 30px;
-        line-height: 1.5em;
-        text-shadow: 2px 2px 2px #000;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-    }
-
-
-    /* New overlay on hover */
-    .overlay-image .hover {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-    }
-    /* New overlay appearance on hover */
-    .overlay-image:hover .hover {
-        opacity: 1;
-    }
-
-    /********* Background and text only overlay on hover *******/
-    .overlay-image .normal {
-        transition: .5s ease;
-    }
-
-    .overlay-image:hover .normal {
-        opacity: 0;
-    }
-
-    .overlay-image .hover {
-        background-color: rgba(0,0,0,0.5);
-    }
+/*______________________________*/
