@@ -10,9 +10,6 @@
 body {
     direction: rtl;
     color: #121619;
-    /*background-image: url('../images/home_bg.jpg');*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover; /* Resize the background image to cover the entire container */
     background-color: #f2f2f2;
 }
 
@@ -266,7 +263,7 @@ article header h2 {
     letter-spacing: 1px;
     color: #F5F5F5;
     position: absolute;
-    top: 27%;
+    top: 28%;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 100%;
@@ -319,7 +316,7 @@ article header nav ol li {
     margin: 0 auto;
 }
 
-/*_______________*/
+/*______________________*/
 
 .article .icon { /*עיצוב כל האייקונים*/
     position: relative;
@@ -359,6 +356,9 @@ article header nav ol li {
     background-image: url('../images/recommend.png');
 }
 
+/*_____________________________________*/
+
+/*עיצוב מאמרים בעמודי תוכן*/
 
 .article section {
     width: 1200px;
@@ -480,10 +480,10 @@ div.scroll_img {
         height: 200px;
     }
 
-
-
 /*______________________________*/
+
 /*______________מעבר עכבר על תמונות________________*/
+
 /********* Simple or original overlay *******/
 /* Main container */
 .overlay-image {
@@ -508,19 +508,19 @@ div.scroll_img {
         font-size: 28px;
         text-align: center;
         position: absolute;
-        top: 71.4%;
+        top: 72.4%;
         left: -2%;
         width: 100%;
     }
 
         .overlay-image .text_before h3 {
-            font-family: 'Gveret Levin AlefAlefAlef', Heebo, sans-serif;
+            font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
             letter-spacing: 1px;
             font-weight: normal;
         }
 
         .overlay-image .text_before h4 {
-            font-family: 'Gveret Levin AlefAlefAlef', Heebo, sans-serif;
+            font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
             font-size: 25px;
             margin: 2px 0px;
         }
