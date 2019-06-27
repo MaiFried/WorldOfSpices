@@ -331,13 +331,14 @@ article header nav ol li {
 
 .article_content #uses { /*אייקון - שימושים*/
     background-image: url('../images/uses.png');
+    width: 110px;
+    height: 110px;
 }
 
 .article_content #ingredient { /*אייקון - רכיבים*/
     background-image: url('../images/ingredient.png');
     width: 110px;
     height: 110px;
-    margin-right: 8px;
 }
 
 .article_content #origin { /*אייקון - ארץ מוצא*/
@@ -403,7 +404,7 @@ article header nav ol li {
             font-weight: bold
         }
 
-    .article_content section .recipe {
+    .article_content section #recipe_fix {
         margin: 0px 0px 55px 0px;
     }
 
@@ -488,7 +489,7 @@ div.scroll_img {
 
     div.scroll_img#img_meditrn_1 {
         background-image: url('../images/salad.jpg');
-        margin: 0 auto 50px;
+        margin: 0 auto 20px;
         margin-top: 50px;
         height: 220px;
     }
@@ -526,18 +527,36 @@ div.scroll_img {
         width: 100%;
     }
 
-        .overlay-image .text_before,
-        .overlay-image .text_before h3 {
-            font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
-            letter-spacing: 1px;
-            font-weight: normal;
-        }
+    .overlay-image .text_before {
+        font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
+        letter-spacing: 1px;
+        font-weight: normal;
+    }
 
-            .overlay-image .text_before h4 {
-                font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
-                font-size: 25px;
-                margin: 2px 0px;
-            }
+.recipe .overlay-image .text_before h4 {
+    font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
+    font-size: 25px;
+    margin: 1.5px 0px;
+}
+
+.spices .overlay-image .text_before h4 {
+    font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
+}
+
+.cusine .overlay-image .text_before h3,
+.spices .overlay-image .text_before h3
+{
+    font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: #121619;
+    font-size: 28px;
+    text-align: center;
+    position: absolute;
+    top: 72.4%;
+    left: -2%;
+    width: 100%;
+}
 
 
 /********* Overlay on hover *******/
@@ -582,6 +601,25 @@ div.scroll_img {
         font-weight: 600;
         word-spacing: 1px;
         letter-spacing: 0.1px;
+    }
+
+.cusine .spices .overlay-image .text_after {
+    position: absolute;
+    top: 45%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 77%;
+}
+
+    .cusine .spices .overlay-image .text_after p {
+        font-family: Assistant, Heebo, sans-serif;
+        font-weight: 600;
+        word-spacing: 1px;
+        letter-spacing: 0.1px;
+        font-size: 21px;
+        line-height: 1.4;
+        text-align: center;
+        color: #121619;
     }
 
 .spices .overlay-image .normal {
