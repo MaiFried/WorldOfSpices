@@ -37,7 +37,7 @@
             </div>
             <div id="nav">
                 <nav role="navigation">
-                    <ul id="main_menu">
+                    <ul>
                         <li>
                             <a class="not_link" href='#'>לפי מטבחים<span class="arrow" /></a>
                             <ul class="submenu">
@@ -114,227 +114,186 @@
         <div class="main">
             <section>
                 <h2>מטבחים מרחבי העולם</h2>
-
-                <div class="row">
-                    <div class="col-4">
-                        <div class="overlay-image hvr-grow">
-                            <a href="#">
-                                <img class="plates_img" src="images/europe2.png" alt="מטבח אירופאי" />
-                                <div class="normal">
-                                    <div class="text_before">
-                                        <h3>
-                                            אירופאי
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="overlay-image hvr-grow">
-                            <a href="MediterraneanCuisine.html">
-                                <img class="plates_img" src="images/mediterranean2.png" alt="מטבח ים תיכוני" />
-                                <div class="normal">
-                                    <div class="text_before">
-                                        <h3>
-                                            ים תיכוני
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="overlay-image hvr-grow">
-                            <a href="#">
-                                <img class="plates_img" src="images/asia2.png" alt="מטבח אסייתי" />
-                                <div class="normal">
-                                    <div class="text_before">
-                                        <h3>
-                                            אסייתי
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-
-                    <div class="col-2"></div>
-
-                    <div class="col-4">
-                        <div class="overlay-image hvr-grow">
-                            <a href="#">
-                                <img class="plates_img" src="images/africa2.png" alt="מטבח אפריקאי" />
-                                <div class="normal">
-                                    <div class="text_before">
-                                        <h3>
-                                            אפריקאי
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="overlay-image hvr-grow">
-                            <a href="#">
-                                <img class="plates_img" src="images/america2.png" alt="מטבח אמריקאי" />
-                                <div class="normal">
-                                    <div class="text_before">
-                                        <h3>
-                                            אמריקאי
-                                        </h3>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-2"></div>
-
-                </div>
+                <nav class="plates_nav">
+                    <ul class="row">
+                        <li class="col-4">
+                            <div class="overlay-image hvr-grow">
+                                <a class="notActive" href="#">
+                                    <div class="text_before">אירופאי</div>
+                                    <img class="plates_img" src="images/europe2.png" alt="מטבח אירופאי" />
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-4">
+                            <div class="overlay-image hvr-grow">
+                                <a href="MediterraneanCuisine.html">
+                                    <div class="text_before">ים תיכוני</div>
+                                    <img class="plates_img" src="images/mediterranean2.png" alt="מטבח ים תיכוני" />
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-4">
+                            <div class="overlay-image hvr-grow">
+                                <a class="notActive" href="#">
+                                    <div class="text_before">אסייתי</div>
+                                    <img class="plates_img" src="images/asia2.png" alt="מטבח אסייתי" />
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="row">
+                        <li class="col-4 offset-2">
+                            <div class="overlay-image hvr-grow">
+                                <a class="notActive" href="#">
+                                    <div class="text_before">אפריקאי</div>
+                                    <img class="plates_img" src="images/africa2.png" alt="מטבח אפריקאי" />
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-4">
+                            <div class="overlay-image hvr-grow">
+                                <a class="notActive" href="#">
+                                    <div class="text_before">אמריקאי</div>
+                                    <img class="plates_img" src="images/america2.png" alt="מטבח אמריקאי" />
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
             </section>
         </div>
 
         <div id="home_page" class="scroll_img"></div>
 
         <div class="main">
+
             <section class="spices">
+
                 <h2>תבלינים מרחבי העולם</h2>
-                <div class="row">
-                    <div class="col-4">
-                        <div id="spices_fade"></div>
-                        <div onmouseenter="fade_in(event)" onmouseleave="fade_out(event)" class="overlay-image hvr-grow">
-                            <a href="#">
-                                <img class="plates_img" src="images/masala.png" alt="גאראם מסאלה" />
-                                <div class="normal">
-                                    <div class="text_before">
-                                        <h3>
-                                            גאראם מסאלה
-                                        </h3>
-                                    </div>
-                                </div>
-                                <div class="hover">
-                                    <div class="text_after">
-                                        <p>
-                                            גאראם מסאלה ("תבלין חם") היא תערובת תבלינים יבשים, המשמשת במטבח ההודי והפקיסטני. זהו...
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
 
-                    <div class="col-4">
-                        <div class="overlay-image hvr-grow">
-                            <a href="#">
-                                <img class="plates_img" src="images/turmeric.png" alt="כורכום" />
-                                <div class="normal">
-                                    <div class="text_before">
-                                        <h3>
-                                            כורכום
-                                        </h3>
+                <nav class="plates_nav">
+                    <ul class="row">
+                        <li class="col-4">
+                            <div class="overlay-image hvr-grow">
+                                <a class="notActive" href="#">
+                                    <img class="plates_img" src="images/masala.png" alt="גאראם מסאלה" />
+                                    <div class="normal">
+                                        <div class="text_before">
+                                            <h3>
+                                                גאראם מסאלה
+                                            </h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="hover">
-                                    <div class="text_after">
-                                        <p>
-                                            כורכום הוא תבלין מקובל במטבח האסיאתי. הכורכום מהווה מרכיב חשוב בתערובות המסאלה...
-                                        </p>
+                                    <div class="hover">
+                                        <div class="text_after">
+                                            <p>
+                                                גאראם מסאלה ("תבלין חם") היא תערובת תבלינים יבשים, המשמשת במטבח ההודי והפקיסטני. זהו...
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="overlay-image hvr-grow">
-                            <a href="zaatar.html">
-                                <img class="plates_img" src="images/zaatar.png" alt="זעתר" />
-                                <div class="normal">
-                                    <div class="text_before">
-                                        <h3>
-                                            זעתר
-                                        </h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-4">
+                            <div class="overlay-image hvr-grow">
+                                <a href="MediterraneanCuisine.html">
+                                    <img class="plates_img" src="images/turmeric.png" alt="כורכום" />
+                                    <div class="normal">
+                                        <div class="text_before">
+                                            <h3>
+                                                כורכום
+                                            </h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="hover">
-                                    <div class="text_after">
-                                        <p>
-                                            הזעתר ללא ספק מזוהה יותר מכל עם התרבות הישראלית. הוא הגיע אלינו מהמטבח הערבי...
-                                        </p>
+                                    <div class="hover">
+                                        <div class="text_after">
+                                            <p>
+                                                כורכום הוא תבלין מקובל במטבח האסיאתי. הכורכום מהווה מרכיב חשוב בתערובות המסאלה...
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-
-                    <div class="col-2"></div>
-
-                    <div class="col-4">
-                        <div class="overlay-image hvr-grow">
-                            <a href="#">
-                                <img class="plates_img" src="images/berbere.png" alt="ברברה" />
-                                <div class="normal">
-                                    <div class="text_before">
-                                        <h3>
-                                            ברברה
-                                        </h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-4">
+                            <div class="overlay-image hvr-grow">
+                                <a class="notActive" href="#">
+                                    <img class="plates_img" src="images/zaatar.png" alt="זעתר" />
+                                    <div class="normal">
+                                        <div class="text_before">
+                                            <h3>
+                                                זעתר
+                                            </h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="hover">
-                                    <div class="text_after">
-                                        <p>
-                                            הברברה היא תערובת תבלינים הנפוצה בעיקר באתיופיה. התערובת ארומטית וחריפה...
-                                        </p>
+                                    <div class="hover">
+                                        <div class="text_after">
+                                            <p>
+                                                הזעתר ללא ספק מזוהה יותר מכל עם התרבות הישראלית. הוא הגיע אלינו מהמטבח הערבי...
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-4">
-                        <div class="overlay-image hvr-grow">
-                            <a href="#">
-                                <img class="plates_img" src="images/saffron.png" alt="זעפרן" />
-                                <div class="normal">
-                                    <div class="text_before">
-                                        <h3>
-                                            זעפרן
-                                        </h3>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="row">
+                        <li class="col-4 offset-2">
+                            <div class="overlay-image hvr-grow">
+                                <a class="notActive" href="#">
+                                    <img class="plates_img" src="images/berbere.png" alt="ברברה" />
+                                    <div class="normal">
+                                        <div class="text_before">
+                                            <h3>
+                                                ברברה
+                                            </h3>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="hover">
-                                    <div class="text_after">
-                                        <p>
-                                            הזעפרן מוכר כתבלין כבר למעלה מ-3,000 שנים ומוצאו מדרום-מערב אסיה. הוא מופק מצלקות...
-                                        </p>
+                                    <div class="hover">
+                                        <div class="text_after">
+                                            <p>
+                                                הברברה היא תערובת תבלינים הנפוצה בעיקר באתיופיה. התערובת ארומטית וחריפה...
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-2"></div>
-
-                </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col-4">
+                            <div class="overlay-image hvr-grow">
+                                <a class="notActive" href="#">
+                                    <img class="plates_img" src="images/saffron.png" alt="זעפרן" />
+                                    <div class="normal">
+                                        <div class="text_before">
+                                            <h3>
+                                                זעפרן
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="text_after">
+                                            <p>
+                                                הזעפרן מוכר כתבלין כבר למעלה מ-3,000 שנים ומוצאו מדרום-מערב אסיה. הוא מופק מצלקות...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
 
             </section>
         </div>
 
         <footer class="page_footer">
-            <ul>
-                <li><a href="#"><h4>אודות</h4></a></li>
-                <li><a href="#"><h4>צרו קשר</h4></a></li>
-                <li><a href="#"><h4>מפת אתר</h4></a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="#">אודות</a></li>
+                    <li><a href="#">צרו קשר</a></li>
+                    <li><a href="#">מפת אתר</a></li>
+                </ul>
+            </nav>
         </footer>
 
     </div>

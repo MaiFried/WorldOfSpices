@@ -109,12 +109,12 @@ div#nav {
     z-index: 2;
 }
 
-nav ul li {
+#main_header nav ul li {
     display: inline-block;
     float: right;
 }
 
-    nav ul li a {
+    #main_header nav ul li a {
         display: block;
         /* background-color: white; */
         font-size: 21px;
@@ -127,7 +127,7 @@ nav ul li {
         font-family: Heebo, sans-serif;
     }
 
-        nav ul li a:hover {
+        #main_header nav ul li a:hover {
             background-color: #bbbbbb;
             color: #121619;
             -webkit-transition: 0.3s ease;
@@ -136,17 +136,17 @@ nav ul li {
             transition: 0.3s ease;
         }
 
-        nav ul li a:active {
+        #main_header nav ul li a:active {
             background-color: dimgrey;
             color: #121619;
         }
 
-    nav ul li ul {
+    #main_header nav ul li ul {
         display: none;
         position: absolute;
     }
 
-        nav ul li ul li a {
+        #main_header nav ul li ul li a {
             font-size: 18px;
             padding: 17px 0px;
             background-color: white;
@@ -156,12 +156,12 @@ nav ul li {
     background-color: lightgray;
 }
 
-nav ul li:hover > ul {
+#main_header nav ul li:hover > ul {
     display: block;
     width: 120px;
 }
 
-#main_menu > li:hover > a {
+#main_header nav ul > li:hover > a {
     background-color: #bbbbbb;
 }
 
@@ -219,13 +219,13 @@ nav ul li:hover > ul {
 }
 
     .main h2 {
-        font-size: 45px;
+        font-size: 57px;
         text-align: center;
-        font-weight: 500;
+        font-weight: bold;
         font-family: Heebo, Assistant, sans-serif;
-        padding: 50px 0px;
-        letter-spacing: 0.3px;
-        word-spacing: 1.3px;
+        padding: 63px 0px;
+        letter-spacing: 0.8px;
+        /*word-spacing: 1.3px;*/
     }
 
     .main .plates {
@@ -252,18 +252,19 @@ article .header_content_page {
 #zaatar_article .header_content_page .img_content_header {
     background-image: url('../images/zaatar.jpg');
 }
+
 #mediterranean_article .header_content_page .img_content_header {
     background-image: url('../images/mediterranean.png');
 }
 
 article header h2 {
     font-family: Heebo, Assistant, sans-serif;
-    font-size: 67px;
+    font-size: 78px;
     font-weight: bold;
     letter-spacing: 1px;
     color: #F5F5F5;
     position: absolute;
-    top: 28%;
+    top: 27%;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 100%;
@@ -310,15 +311,15 @@ article header nav ol li {
 
 .breadcrumb_nav {
     position: relative;
-    top: -462px;
-    right: 20px;
-    max-width: 1920px;
+    top: -460px;
+    right: 10px;
+    width: 1366px;
     margin: 0 auto;
 }
 
 /*______________________*/
 
-.article .icon { /*עיצוב כל האייקונים*/
+.article_content .icon { /*עיצוב כל האייקונים*/
     position: relative;
     display: block;
     background-repeat: no-repeat;
@@ -328,46 +329,53 @@ article header nav ol li {
     height: 100px;
 }
 
-.article #uses { /*אייקון - שימושים*/
+.article_content #uses { /*אייקון - שימושים*/
     background-image: url('../images/uses.png');
 }
 
-.article #ingredient { /*אייקון - רכיבים*/
+.article_content #ingredient { /*אייקון - רכיבים*/
     background-image: url('../images/ingredient.png');
+    width: 110px;
+    height: 110px;
+    margin-right: 8px;
 }
 
-.article #origin { /*אייקון - ארץ מוצא*/
+.article_content #origin { /*אייקון - ארץ מוצא*/
     background-image: url('../images/origin.png');
 }
 
-.article #tips { /*אייקון - טיפים לבישול*/
+.article_content #tips { /*אייקון - טיפים לבישול*/
     background-image: url('../images/tip.png');
 }
 
-.article #warning { /*אייקון - אזהרות*/
+.article_content #warning { /*אייקון - אזהרות*/
     background-image: url('../images/warning.png');
 }
 
-.article #more_info { /*אייקון - מידע נוסף*/
+.article_content #more_info { /*אייקון - מידע נוסף*/
     background-image: url('../images/more.png');
 }
 
-.article #recipe { /*אייקון - מתכונים מומלצים*/
+.article_content #recipe { /*אייקון - מתכונים מומלצים*/
     background-image: url('../images/recommend.png');
+}
+
+.article_content #info { /*אייקון - מידע/תיאור */
+    background-image: url('../images/info.png');
 }
 
 /*_____________________________________*/
 
 /*עיצוב מאמרים בעמודי תוכן*/
 
-.article section {
+.article_content section {
     width: 1200px;
     margin: 0 auto;
     padding: 65px 0px;
 }
 
-    .article section h3,
-    .article section h3 strong { /*כותרות משניות בתוך המאמרים שבעמודי תוכן */
+    .article_content section h3,
+    .article_content section h3 strong { /*כותרות משניות בתוך המאמרים שבעמודי תוכן */
         font-family: Assistant, Heebo, sans-serif;
         font-size: 50px;
         font-weight: bold;
@@ -375,14 +383,14 @@ article header nav ol li {
         letter-spacing: 0.4px;
     }
 
-    .article section p { /*פסקאות בתוך המאמרים שבעמודי תוכן*/
+    .article_content section p { /*פסקאות בתוך המאמרים שבעמודי תוכן*/
         font-family: Assistant, Heebo, sans-serif;
         font-size: 24px;
         text-align: justify;
         line-height: 42px;
     }
 
-    .article section ul li {
+    .article_content section ul li {
         font-family: Assistant, Heebo, sans-serif;
         font-size: 24px;
         text-align: justify;
@@ -390,17 +398,21 @@ article header nav ol li {
         list-style: none;
     }
 
-        .article section ul li .bold {
+        .article_content section ul li .bold {
             font-family: Assistant, Heebo, sans-serif;
             font-weight: bold
         }
 
-    .article section .recipe {
+    .article_content section .recipe {
         margin: 0px 0px 55px 0px;
     }
 
-/*עיצוב תמונות במאמרים בעמודי תוכן*/
+article #padding_fix {
+    padding: 15px 93px 60px 32px;
+}
 
+
+/*עיצוב תמונות במאמרים בעמודי תוכן*/
 article .article_images_container {
     padding: 30px 0px 60px 0px;
     width: 1170px;
@@ -452,11 +464,12 @@ div.scroll_img {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 0 auto;
 }
 
     div.scroll_img#home_page {
         background-image: url('../images/cover.jpg');
+        margin: 0 auto;
+        margin-top: 30px;
     }
 
     div.scroll_img#img_zaatar_1 {
@@ -513,17 +526,18 @@ div.scroll_img {
         width: 100%;
     }
 
+        .overlay-image .text_before,
         .overlay-image .text_before h3 {
             font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
             letter-spacing: 1px;
             font-weight: normal;
         }
 
-        .overlay-image .text_before h4 {
-            font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
-            font-size: 25px;
-            margin: 2px 0px;
-        }
+            .overlay-image .text_before h4 {
+                font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
+                font-size: 25px;
+                margin: 2px 0px;
+            }
 
 
 /********* Overlay on hover *******/
@@ -593,18 +607,6 @@ div.scroll_img {
     transition: 0.5s ease;
 }
 
-
-#spices_fade {
-    position: absolute;
-    display: block;
-    background-color: #F2F2F2;
-    opacity: 0.9;
-    width: 1366px;
-    height: 615px;
-    z-index: 1;
-    visibility: hidden;
-}
-
 /*______________________________*/
 
 
@@ -614,45 +616,39 @@ div.scroll_img {
 
 footer {
     background-color: #893630;
-    margin-top: 100px;
+    margin-top: 60px;
     height: 100px;
     margin-bottom: 20px;
 }
 
-    footer ul {
+    footer nav ul {
         list-style: none;
         width: 960px;
         margin: 0 auto;
     }
 
-        footer ul li {
+        footer nav ul li {
             display: inline-block;
             float: right;
             margin: 20px 0px;
             width: 320px;
         }
 
-            footer ul li a {
+            footer nav ul li a {
                 display: block;
-                color: #f2f2f2;
                 text-align: center;
                 width: 115px;
                 height: 60px;
-                Padding: 15px 0px;
+                Padding: 17px 0px;
                 font-size: 22px;
                 font-weight: 400;
                 margin: 0 auto;
+                font-family: Assistant, sans-serif;
+                color: #F5F5F5;
+                letter-spacing: 0.5px;
             }
 
-                footer ul li a h4,
-                footer ul li a h5 {
-                    font-family: Assistant, sans-serif;
-                    color: #F5F5F5;
-                    letter-spacing: 0.5px;
-                }
-
-                footer ul li a:hover h4,
-                footer ul li a:hover h5 {
+                footer nav ul li a:hover {
                     font-family: Assistant, sans-serif;
                     color: #1B1B1B;
                 }
