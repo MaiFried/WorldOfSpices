@@ -283,7 +283,7 @@ article header p {
     line-height: 46px;
     color: #121619;
     text-align: justify;
-    padding: 50px 100px 10px 100px;
+    padding: 50px 100px 15px 100px;
 }
 
 /*עיצוב תפריט פירורי לחם*/
@@ -376,7 +376,7 @@ article .header_content_page nav ol li {
 .article_content section {
     width: 1200px;
     margin: 0 auto;
-    padding: 65px 0px;
+    padding: 55px 0px;
 }
 
     .article_content section h3,
@@ -661,7 +661,7 @@ div.scroll_img {
 /**********  עמוד אודות  **********/
 
 #about_article header h2 {
-    top: 22.5%;
+    top: 20.5%;
 }
 
 #about_article header p {
@@ -699,11 +699,11 @@ div.scroll_img {
 
 #about_article .header_content_page .img_content_header {
     background-image: url('../images/about_img.jpg');
-    height: 450px;
+    height: 400px;
 }
 
 #about_article .breadcrumb_nav {
-    top: -436px;
+    top: -385px;
 }
 
 #about_article #my_pic {
