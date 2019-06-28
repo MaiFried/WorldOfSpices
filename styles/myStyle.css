@@ -32,6 +32,10 @@ a:link {
     text-decoration: none;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 
 /**********ניווט ולוגו**********/
 
@@ -283,29 +287,29 @@ article header p {
 }
 
 /*עיצוב תפריט פירורי לחם*/
-article header nav ol li {
+article .header_content_page nav ol li {
     display: inline-block; /*תפריט אופקי*/
 }
 
-    article header nav ol li a {
+    article .header_content_page nav ol li a {
         font-family: Heebo, Assistant, sans-serif;
         font-size: 19px;
         color: #f2f2f2;
     }
 
-        article header nav ol li a:hover {
+        article .header_content_page nav ol li a:hover {
             color: #f2f2f2;
             text-decoration: underline;
         }
 
-    article header nav ol li:after {
+    article .header_content_page nav ol li:after {
         content: ">";
         font-family: Heebo, Assistant, sans-serif;
         font-size: 19px;
         color: #f2f2f2;
     }
 
-    article header nav ol li:last-child:after {
+    article .header_content_page nav ol li:last-child:after {
         content: "";
     }
 
@@ -409,7 +413,15 @@ article header nav ol li {
     }
 
 article #padding_fix {
-    padding: 15px 93px 60px 32px;
+    padding: 15px 93px 70px 32px;
+}
+
+#mediterranean_article .spices nav .row {
+    margin-bottom: 30px;
+}
+
+#mediterranean_article .spices nav .row:last-child {
+    margin-bottom: 0px;
 }
 
 
@@ -544,8 +556,7 @@ div.scroll_img {
 }
 
 .cusine .overlay-image .text_before h3,
-.spices .overlay-image .text_before h3
-{
+.spices .overlay-image .text_before h3 {
     font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
     letter-spacing: 1px;
     font-weight: normal;
@@ -647,14 +658,273 @@ div.scroll_img {
 
 /*______________________________*/
 
+/**********  עמוד אודות  **********/
 
+#about_article header h2 {
+    top: 22.5%;
+}
+
+#about_article header p {
+    width: 1200px;
+    font-family: Assistant, sans-serif;
+    font-size: 25px;
+    line-height: 44px;
+    padding: 30px 100px 10px 100px;
+}
+
+#about_article .bold {
+    font-family: Assistant, sans-serif;
+}
+
+#about_article .article_content section {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 100px 0px 100px;
+}
+
+    #about_article .article_content section h3 {
+        text-align: right;
+        font-size: 28px;
+        margin-bottom: 13px;
+    }
+
+    #about_article .article_content section ul {
+        font-size: 25px;
+        margin-right: 24px;
+    }
+
+        #about_article .article_content section ul li {
+            list-style: disc inside;
+        }
+
+#about_article .header_content_page .img_content_header {
+    background-image: url('../images/about_img.jpg');
+    height: 450px;
+}
+
+#about_article .breadcrumb_nav {
+    top: -436px;
+}
+
+#about_article #my_pic {
+    position: relative;
+    background-image: url(../images/mai_fried.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#about_article #my_name {
+    text-align: center;
+}
+
+#about_article #hit_logo {
+    position: relative;
+    top: 50px;
+    width: 300px;
+    height: 300px;
+    background-size: 100%;
+    margin: 0 auto;
+    background-image: url(../images/HITlogo.png);
+    background-repeat: no-repeat;
+}
+
+/*______________________________*/
+
+/**********  עמוד צור קשר  **********/
+
+#contact_article .header_content_page .img_content_header {
+    background-image: url('../images/contact_img.jpg');
+    height: 400px;
+}
+
+#contact_article header h2 {
+    top: 24.5%;
+}
+
+#contact_article header p {
+    width: 1200px;
+    font-family: Assistant, sans-serif;
+    font-size: 24px;
+    line-height: 42px;
+    padding: 22px 100px;
+}
+
+#contact_article .article_content section {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 100px 0px 100px;
+}
+
+#contact_article .breadcrumb_nav {
+    top: -384px;
+}
+
+#contact_article form {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#contact_article label {
+    font-family: Assistant, sans-serif;
+    font-size: 22px;
+    line-height: 46px;
+}
+
+#contact_article input, #mysay {
+    font-size: 12pt;
+    width: 200px;
+    height: 25px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    padding-right: 10px;
+    border: gray 1px solid;
+}
+
+#mymail {
+    display: block;
+}
+
+
+input#mymailinput {
+    margin-right: 55px;
+}
+
+input#mytxtinput {
+    margin-right: 34px;
+}
+
+#contact_article input.submitbtn {
+    width: 100px;
+    height: 50px;
+    margin-right: 110px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    border: #893630 2px solid;
+    font-family: Assistant, sans-serif;
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-size: 21px;
+    padding: 0px;
+}
+
+    #contact_article input.submitbtn:hover {
+        font-family: Assistant, sans-serif;
+        letter-spacing: 0.5px;
+        width: 100px;
+        height: 50px;
+        margin-top: -30px;
+        margin-bottom: 20px;
+        margin-right: 110px;
+        background-color: #893630;
+        color: #f2f2f2;
+        border: #893630 2px solid;
+    }
+
+#feedback {
+    margin-top: -10px;
+    margin-right: 110px;
+    padding-bottom: 25px;
+}
+
+#mysay {
+    width: 300px;
+    height: 100px;
+}
+
+#mysaylabel {
+    display: block;
+    padding-bottom: 130px;
+}
+
+textarea#mysay {
+    margin-bottom: -90px;
+}
+/*______________________________*/
+
+
+/**********  עמוד מפת אתר  **********/
+
+#sitemap_article .header_content_page .img_content_header {
+    background-image: url('../images/sitemap_img.jpg');
+    height: 400px;
+}
+
+#sitemap_article .header_content_page h2 {
+    font-family: Heebo, Assistant, sans-serif;
+    font-size: 78px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #F5F5F5;
+    position: absolute;
+    top: 27%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    padding: 25px 0px;
+}
+
+#sitemap_article h3 {
+    margin-bottom: 25px;
+}
+
+#sitemap_article .article_content section {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 100px;
+}
+
+#sitemap_article .breadcrumb_nav {
+    top: -384px;
+}
+
+#sitemap_article section ul li {
+    font-family: Assistant, Heebo, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    line-height: 41px;
+    list-style: none;
+    text-decoration: underline;
+}
+
+    #sitemap_article section ul li a {
+        color: #121619;
+    }
+
+    #sitemap_article section ul li .sitemap_active {
+        color: blue;
+    }
+
+    #sitemap_article section ul li .sitemap_active:hover {
+        color: darkblue;
+    }
+
+        #sitemap_article section ul li .sitemap_active:active {
+            color: darkblue;
+            font-weight: bold;
+        }
+
+#sitemap_article hr {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*______________________________*/
 
 
 /**********  פוטר  **********/
-
 footer {
     background-color: #893630;
-    margin-top: 60px;
+    margin-top: 50px;
     height: 100px;
     margin-bottom: 20px;
 }
@@ -691,4 +961,11 @@ footer {
                     color: #1B1B1B;
                 }
 
+                footer nav ul li a:active {
+                    font-family: Assistant, sans-serif;
+                    color: #1B1B1B;
+                    font-weight: bold;
+                }
+
 /*______________________________*/
+
