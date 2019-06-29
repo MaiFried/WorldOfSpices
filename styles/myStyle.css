@@ -53,7 +53,7 @@ a:link {
     padding: 5px 5px;
     position: relative;
     /* background-color: khaki; */
-    width: 366px;
+    width: 365px;
     display: inline-block;
 }
 
@@ -194,7 +194,7 @@ div#nav {
     position: absolute;
     /*display: inline-block;*/
     bottom: 40px;
-    right: 40px;
+    right: 274px;
     background-color: ghostwhite;
     border-radius: 25px;
 }
