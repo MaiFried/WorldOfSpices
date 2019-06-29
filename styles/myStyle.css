@@ -227,9 +227,17 @@ div#nav {
         text-align: center;
         font-weight: bold;
         font-family: Heebo, Assistant, sans-serif;
-        padding: 63px 0px;
+        padding-top: 50px;
+        padding-bottom: 36px;
         letter-spacing: 0.8px;
-        /*word-spacing: 1.3px;*/
+    }
+
+    .main p.cta_p {
+        font-size: 32px;
+        text-align: center;
+        font-family: Assistant, sans-serif;
+        letter-spacing: 0.8px;
+        margin-bottom: 66px;
     }
 
     .main .plates {
@@ -483,6 +491,7 @@ div.scroll_img {
         background-image: url('../images/cover.jpg');
         margin: 0 auto;
         margin-top: 30px;
+        margin-bottom: 6px;
     }
 
     div.scroll_img#img_zaatar_1 {
