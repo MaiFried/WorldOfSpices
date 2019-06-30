@@ -606,14 +606,14 @@ div.scroll_img {
 /********* Background and text only overlay on hover *******/
 .spices .overlay-image .text_after {
     color: #121619;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 1.4;
     text-align: center;
     position: absolute;
     top: 45%;
     left: 53%;
     transform: translate(-50%, -50%);
-    width: 77%;
+    width: 74%;
 }
 
     .spices .overlay-image .text_after p {
@@ -628,7 +628,7 @@ div.scroll_img {
     top: 45%;
     left: 53%;
     transform: translate(-50%, -50%);
-    width: 77%;
+    width: 74%;
 }
 
     .cusine .spices .overlay-image .text_after p {
@@ -636,7 +636,7 @@ div.scroll_img {
         font-weight: 600;
         word-spacing: 1px;
         letter-spacing: 0.1px;
-        font-size: 21px;
+        font-size: 20px;
         line-height: 1.4;
         text-align: center;
         color: #121619;
@@ -704,6 +704,7 @@ div.scroll_img {
 
         #about_article .article_content section ul li {
             list-style: disc inside;
+            line-height: 44px;
         }
 
 #about_article .header_content_page .img_content_header {
@@ -732,13 +733,20 @@ div.scroll_img {
 
 #about_article #hit_logo {
     position: relative;
-    top: 50px;
     width: 300px;
-    height: 300px;
+    height: 210px;
     background-size: 100%;
     margin: 0 auto;
     background-image: url(../images/HITlogo.png);
     background-repeat: no-repeat;
+    margin-top: 90px;
+}
+
+#about_article #logo_link {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 70px;
 }
 
 /*______________________________*/
@@ -938,9 +946,9 @@ footer {
     margin-bottom: 20px;
 }
 
-    footer nav ul {
-        list-style: none;
-        width: 960px;
+    footer nav ul.row {
+        /*list-style: none;*/
+        width: 1366px;
         margin: 0 auto;
     }
 
@@ -954,12 +962,12 @@ footer {
             footer nav ul li a {
                 display: block;
                 text-align: center;
-                width: 115px;
-                height: 60px;
+                /*width: 115px;*/
+                /*height: 60px;*/
                 Padding: 17px 0px;
                 font-size: 22px;
                 font-weight: 400;
-                margin: 0 auto;
+                /*margin: 0 auto;*/
                 font-family: Assistant, sans-serif;
                 color: #F5F5F5;
                 letter-spacing: 0.5px;
@@ -978,3 +986,26 @@ footer {
 
 /*______________________________*/
 
+/***********עיצוב מתן קרדיטים לתמונות***********/
+
+.article_content .credits {
+    display: block;
+    width: 1170px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    top: -25px;
+}
+
+.credits#salad_credit {
+    top: -0px;
+}
+
+.credits.header_credits {
+    text-align: left;
+    width: 1366px;
+    margin: 0 auto;
+    position: relative;
+    top: -160px;
+    right: -100px;
+}
