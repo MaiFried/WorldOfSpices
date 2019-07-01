@@ -246,6 +246,10 @@ div#nav {
         padding-top: 25px;
     }
 
+.article_content {
+    min-width: 1366px;
+}
+
 article .header_content_page {
     margin: 0 auto;
     position: relative;
@@ -261,7 +265,6 @@ article .header_content_page {
         background-position: center;
         background-repeat: no-repeat;
     }
-
 
 #zaatar_article .header_content_page .img_content_header {
     background-image: url('../images/zaatar.jpg');
