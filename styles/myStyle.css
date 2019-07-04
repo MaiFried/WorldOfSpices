@@ -7,6 +7,28 @@
     font-style: normal;
 }
 
+/* Site Stylesheet
+     1. Global Styles
+     2. Main Mavigation and Logo
+     3. Animation Styles
+     4. Home Page
+        4.1 Carousel on Home Page
+        4.2 Main Content on Home Page
+     5. Content Pages
+        5.1 Zaatar Content Page
+        5.2 Mediterranean Cuisine Content Page
+     6. Other Pages
+        6.1 About Page
+        6.2 Contact page
+        6.3 Site Map Page
+     7. Footer Styles
+     8. Credits Styles
+======================================== */
+
+
+/* 1. Global Styles
+======================================== */
+
 body {
     direction: rtl;
     color: #121619;
@@ -36,15 +58,23 @@ a:link {
     font-weight: bold;
 }
 
+div.scroll_img { /*תמונות אווירה פאראלקס*/
+    height: 250px;
+    min-width: 1366px;
+    max-width: 1920px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
-/**********ניווט ולוגו**********/
+/* 2. Main Mavigation and Logo
+======================================== */
 
 #main_header {
     width: 1366px;
-    height: 100px;
     margin: 0 auto;
     padding-top: 12px;
-    /*background-color: aqua;*/
 }
 
 /*לוגו*/
@@ -52,15 +82,12 @@ a:link {
 #logo_full {
     padding: 5px 5px;
     position: relative;
-    /* background-color: khaki; */
     width: 365px;
     display: inline-block;
 }
 
     #logo_full a {
         width: 100%;
-        /* height: 87px; */
-        /* background-color: blue; */
         position: relative;
         display: inline-block;
     }
@@ -74,7 +101,6 @@ a:link {
 .logo_txt {
     padding-top: 3.3px;
     color: #121619;
-    /* background-color: aqua; */
 }
 
 h1 {
@@ -120,12 +146,10 @@ div#nav {
 
     #main_header nav ul li a {
         display: block;
-        /* background-color: white; */
         font-size: 21px;
         color: #121619;
         width: 200px;
         height: 50px;
-        text-decoration: none;
         text-align: center;
         padding: 16px 0px;
         font-family: Heebo, sans-serif;
@@ -169,299 +193,10 @@ div#nav {
     background-color: #bbbbbb;
 }
 
-/*______________________________*/
+/* 3. Animation Styles
+======================================== */
 
-/**********קרוסלה - תמונה גדולה**********/
-.banner {
-    max-width: 1920px;
-    margin: 0 auto;
-    min-width: 1366px;
-}
-
-.map_mark {
-    background-image: url(../images/location.png);
-    background-size: 100% 100%;
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 29px;
-    right: 21px;
-    top: 5px;
-}
-
-.location {
-    width: fit-content;
-    height: 55px;
-    position: absolute;
-    /*display: inline-block;*/
-    bottom: 40px;
-    right: 274px;
-    background-color: ghostwhite;
-    border-radius: 25px;
-}
-
-    .location p {
-        display: inline-block;
-        font-family: Heebo, Assistant, sans-serif;
-        font-size: 22px;
-        top: 3.5px;
-        right: 0px;
-        position: relative;
-        padding: 15px 25px 12px 28px;
-        font-weight: 600;
-    }
-
-/*______________________________*/
-
-/**********תוכן עיקרי**********/
-
-.main {
-    width: 1366px;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    /*background-color: antiquewhite;*/
-}
-
-    .main h2 {
-        font-size: 57px;
-        text-align: center;
-        font-weight: bold;
-        font-family: Heebo, Assistant, sans-serif;
-        padding-top: 50px;
-        padding-bottom: 36px;
-        letter-spacing: 0.8px;
-    }
-
-    .main p.cta_p {
-        font-size: 32px;
-        text-align: center;
-        font-family: Assistant, sans-serif;
-        letter-spacing: 0.8px;
-        margin-bottom: 66px;
-    }
-
-    .main .plates {
-        width: 280px;
-        padding-top: 25px;
-    }
-
-.article_content {
-    min-width: 1366px;
-}
-
-article .header_content_page {
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    min-width: 1366px;
-}
-
-    article .header_content_page .img_content_header {
-        height: 480px;
-        overflow: hidden;
-        top: 0;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-#zaatar_article .header_content_page .img_content_header {
-    background-image: url('../images/zaatar.jpg');
-}
-
-#mediterranean_article .header_content_page .img_content_header {
-    background-image: url('../images/mediterranean.png');
-}
-
-article header h2 {
-    font-family: Heebo, Assistant, sans-serif;
-    font-size: 78px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #F5F5F5;
-    position: absolute;
-    top: 27%;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    width: 100%;
-    padding: 25px 0px;
-}
-
-article header p {
-    width: 1366px;
-    margin: 0 auto;
-    font-family: Heebo, Assistant, sans-serif;
-    font-size: 26px;
-    line-height: 46px;
-    color: #121619;
-    text-align: justify;
-    padding: 50px 100px 15px 100px;
-}
-
-/*עיצוב תפריט פירורי לחם*/
-article .header_content_page nav ol li {
-    display: inline-block; /*תפריט אופקי*/
-}
-
-    article .header_content_page nav ol li a {
-        font-family: Heebo, Assistant, sans-serif;
-        font-size: 19px;
-        color: #f2f2f2;
-    }
-
-        article .header_content_page nav ol li a:hover {
-            color: #f2f2f2;
-            text-decoration: underline;
-        }
-
-    article .header_content_page nav ol li:after {
-        content: ">";
-        font-family: Heebo, Assistant, sans-serif;
-        font-size: 19px;
-        color: #f2f2f2;
-    }
-
-    article .header_content_page nav ol li:last-child:after {
-        content: "";
-    }
-
-.breadcrumb_nav {
-    position: relative;
-    top: -460px;
-    right: 10px;
-    width: 1366px;
-    margin: 0 auto;
-}
-
-/*______________________*/
-
-.article_content .icon { /*עיצוב כל האייקונים*/
-    position: relative;
-    display: block;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin: 0 auto;
-    width: 100px;
-    height: 100px;
-}
-
-.article_content #uses { /*אייקון - שימושים*/
-    background-image: url('../images/uses.png');
-    width: 110px;
-    height: 110px;
-}
-
-.article_content #ingredient { /*אייקון - רכיבים*/
-    background-image: url('../images/ingredient.png');
-    width: 110px;
-    height: 110px;
-}
-
-.article_content #origin { /*אייקון - ארץ מוצא*/
-    background-image: url('../images/origin.png');
-}
-
-.article_content #tips { /*אייקון - טיפים לבישול*/
-    background-image: url('../images/tip.png');
-}
-
-.article_content #warning { /*אייקון - אזהרות*/
-    background-image: url('../images/warning.png');
-}
-
-.article_content #more_info { /*אייקון - מידע נוסף*/
-    background-image: url('../images/more.png');
-}
-
-.article_content #recipe { /*אייקון - מתכונים מומלצים*/
-    background-image: url('../images/recommend.png');
-}
-
-.article_content #info { /*אייקון - מידע/תיאור */
-    background-image: url('../images/info.png');
-}
-
-/*_____________________________________*/
-
-/*עיצוב מאמרים בעמודי תוכן*/
-
-.article_content section {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 55px 0px;
-}
-
-    .article_content section h3,
-    .article_content section h3 strong { /*כותרות משניות בתוך המאמרים שבעמודי תוכן */
-        font-family: Assistant, Heebo, sans-serif;
-        font-size: 50px;
-        font-weight: bold;
-        text-align: center;
-        letter-spacing: 0.4px;
-    }
-
-    .article_content section p { /*פסקאות בתוך המאמרים שבעמודי תוכן*/
-        font-family: Assistant, Heebo, sans-serif;
-        font-size: 24px;
-        text-align: justify;
-        line-height: 42px;
-    }
-
-    .article_content section ul li {
-        font-family: Assistant, Heebo, sans-serif;
-        font-size: 24px;
-        text-align: justify;
-        line-height: 42px;
-        list-style: none;
-    }
-
-        .article_content section ul li .bold {
-            font-family: Assistant, Heebo, sans-serif;
-            font-weight: bold
-        }
-
-    .article_content section #recipe_fix {
-        margin: 0px 0px 55px 0px;
-    }
-
-article #padding_fix {
-    padding: 15px 93px 70px 32px;
-}
-
-#mediterranean_article .spices nav .row {
-    margin-bottom: 30px;
-}
-
-#mediterranean_article .spices nav .row:last-child {
-    margin-bottom: 0px;
-}
-
-
-/*עיצוב תמונות במאמרים בעמודי תוכן*/
-article .article_images_container {
-    padding: 30px 0px 60px 0px;
-    width: 1170px;
-    margin: 0 auto;
-}
-
-article .article_images {
-    height: 350px;
-    border-radius: 100px;
-    overflow: hidden;
-    top: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-    article .article_images#img_zaatar_4 {
-        background-image: url('../images/zaatar4.png');
-    }
-
-
-/*___________________________________________________________________________________________________*/
-/**********  הגדלת אלמנט במעבר עכבר  **********/
+/***הגדלת אלמנט במעבר עכבר****/
 .hvr-grow {
     display: inline-block;
     vertical-align: middle;
@@ -478,57 +213,13 @@ article .article_images {
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
     }
+/*_______________________*/
 
-/*______________________________*/
-
-
-/**********  תמונות אווירה  **********/
-div.scroll_img {
-    height: 250px;
-    min-width: 1366px;
-    max-width: 1920px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-    div.scroll_img#home_page {
-        background-image: url('../images/cover.jpg');
-        margin: 0 auto;
-        margin-top: 30px;
-        margin-bottom: 6px;
-    }
-
-    div.scroll_img#img_zaatar_1 {
-        background-image: url('../images/zaatar1.jpg');
-        margin: 0 auto 50px;
-        margin-top: 50px;
-        height: 200px;
-    }
-
-    div.scroll_img#img_zaatar_2 {
-        background-image: url('../images/zaatar2.jpg');
-        margin: 0 auto 50px;
-        margin-top: 50px;
-        height: 200px;
-    }
-
-    div.scroll_img#img_meditrn_1 {
-        background-image: url('../images/salad.jpg');
-        margin: 0 auto 20px;
-        margin-top: 50px;
-        height: 220px;
-    }
-
-/*______________________________*/
-
-/*______________מעבר עכבר על תמונות________________*/
+/****מעבר עכבר על תמונות****/
 
 /********* Simple or original overlay *******/
 /* Main container */
 .overlay-image {
-    position: relative;
     width: 280px;
     margin: 25px 80px 60px 0px;
     z-index: 0;
@@ -544,7 +235,12 @@ div.scroll_img {
         transition: 0.5s ease;
     }
     /* Original text overlay */
-    .overlay-image .text_before {
+    .overlay-image .text_before,
+    .cusine .overlay-image .text_before h3,
+    .spices .overlay-image .text_before h3,
+    .spices .overlay-image .text_before h4 {
+        font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
+        letter-spacing: 1px;
         color: #121619;
         font-size: 28px;
         text-align: center;
@@ -554,36 +250,11 @@ div.scroll_img {
         width: 100%;
     }
 
-    .overlay-image .text_before {
-        font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
-        letter-spacing: 1px;
-        font-weight: normal;
-    }
-
 .recipe .overlay-image .text_before h4 {
     font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
-    font-size: 25px;
-    margin: 1.5px 0px;
+    font-size: 24.5px;
+    margin: 2.5px 0px;
 }
-
-.spices .overlay-image .text_before h4 {
-    font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
-}
-
-.cusine .overlay-image .text_before h3,
-.spices .overlay-image .text_before h3 {
-    font-family: 'gveretlevin_alefalefalef', gveretlevin_alefalefalef, Heebo, sans-serif;
-    letter-spacing: 1px;
-    font-weight: normal;
-    color: #121619;
-    font-size: 28px;
-    text-align: center;
-    position: absolute;
-    top: 72.4%;
-    left: -2%;
-    width: 100%;
-}
-
 
 /********* Overlay on hover *******/
 /* New overlay on hover */
@@ -607,7 +278,6 @@ div.scroll_img {
     -o-transition: 0.5s ease;
     transition: 0.5s ease;
 }
-
 
 /********* Background and text only overlay on hover *******/
 .spices .overlay-image .text_after {
@@ -671,9 +341,342 @@ div.scroll_img {
     transition: 0.5s ease;
 }
 
-/*______________________________*/
 
-/**********  עמוד אודות  **********/
+/* 4. Home Page
+======================================== */
+
+div.scroll_img#home_page { /*תמונת אווירה פאראלקס עמוד ראשי*/
+    background-image: url('../images/cover.jpg');
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 6px;
+}
+
+/*===4.1 Carousel on Home Page===*/
+
+.banner {
+    max-width: 1920px;
+    margin: 0 auto;
+    min-width: 1366px;
+}
+
+.carousel-control-prev, .carousel-control-next { /*כדי שהחיצים לא יעלו על הטקסט*/
+    width: 14%;
+}
+
+.map_mark {
+    background-image: url(../images/location.png);
+    background-size: 100% 100%;
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 29px;
+    right: 21px;
+    top: 5px;
+}
+
+.location {
+    width: fit-content; /*כדי שגודל הרקע יהיה מותאם לגודל הטקסט*/
+    height: 55px;
+    position: absolute;
+    bottom: 40px;
+    right: 274px;
+    background-color: ghostwhite;
+    border-radius: 25px;
+}
+
+    .location p {
+        display: inline-block;
+        font-family: Heebo, Assistant, sans-serif;
+        font-size: 22px;
+        top: 3.5px;
+        right: 0px;
+        position: relative;
+        padding: 15px 25px 12px 28px;
+        font-weight: 600;
+    }
+
+/*===4.2 Main Content on Home Page===*/
+
+.main {
+    width: 1366px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+
+    .main h2 {
+        font-size: 57px;
+        text-align: center;
+        font-weight: bold;
+        font-family: Heebo, Assistant, sans-serif;
+        padding-top: 50px;
+        padding-bottom: 36px;
+        letter-spacing: 0.8px;
+    }
+
+    .main p.cta_p {
+        font-size: 32px;
+        text-align: center;
+        font-family: Assistant, sans-serif;
+        letter-spacing: 0.8px;
+        margin-bottom: 66px;
+    }
+
+    .main .plates {
+        width: 280px;
+        padding-top: 25px;
+    }
+
+/* 5. Content Pages
+======================================== */
+
+.article_content {
+    min-width: 1366px;
+}
+
+/*content header style*/
+
+article .header_content_page {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    min-width: 1366px;
+}
+
+    article .header_content_page .img_content_header {
+        height: 480px;
+        overflow: hidden;
+        top: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+article header h2 {
+    font-family: Heebo, Assistant, sans-serif;
+    font-size: 78px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #F5F5F5;
+    position: absolute;
+    top: 27%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    padding: 25px 0px;
+}
+
+article header p {
+    width: 1366px;
+    margin: 0 auto;
+    font-family: Heebo, Assistant, sans-serif;
+    font-size: 26px;
+    line-height: 46px;
+    color: #121619;
+    text-align: justify;
+    padding: 50px 100px 15px 100px;
+}
+
+/*עיצוב תפריט פירורי לחם*/
+article .header_content_page nav ol li {
+    display: inline-block; /*תפריט אופקי*/
+}
+
+    article .header_content_page nav ol li a {
+        font-family: Heebo, Assistant, sans-serif;
+        font-size: 19px;
+        color: #f2f2f2;
+    }
+
+        article .header_content_page nav ol li a:hover {
+            color: #f2f2f2;
+            text-decoration: underline;
+        }
+
+    article .header_content_page nav ol li:after {
+        content: ">";
+        font-family: Heebo, Assistant, sans-serif;
+        font-size: 19px;
+        color: #f2f2f2;
+    }
+
+    article .header_content_page nav ol li:last-child:after {
+        content: "";
+    }
+
+.breadcrumb_nav {
+    position: relative;
+    top: -460px;
+    right: 10px;
+    width: 1366px;
+    margin: 0 auto;
+}
+/*______________________*/
+
+/*עיצוב מאמרים בעמודי תוכן*/
+
+.article_content section {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 55px 0px;
+}
+
+    .article_content section h3,
+    .article_content section h3 strong { /*כותרות משניות בתוך המאמרים שבעמודי תוכן */
+        font-family: Assistant, Heebo, sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.4px;
+    }
+
+    .article_content section p { /*פסקאות בתוך המאמרים שבעמודי תוכן*/
+        font-family: Assistant, Heebo, sans-serif;
+        font-size: 24px;
+        text-align: justify;
+        line-height: 42px;
+    }
+
+    .article_content section ul li {
+        font-family: Assistant, Heebo, sans-serif;
+        font-size: 24px;
+        text-align: justify;
+        line-height: 42px;
+        list-style: none;
+    }
+
+        .article_content section ul li .bold {
+            font-family: Assistant, Heebo, sans-serif;
+            font-weight: bold
+        }
+
+    .article_content section #recipe_fix {
+        margin: 0px 0px 55px 0px;
+    }
+
+article #padding_fix {
+    padding: 15px 93px 70px 32px;
+}
+
+#mediterranean_article .spices nav .row {
+    margin-bottom: 30px;
+}
+
+#mediterranean_article .spices nav .row:last-child {
+    margin-bottom: 0px;
+}
+
+/*____________________________*/
+
+
+.article_content .icon { /*עיצוב כל האייקונים*/
+    position: relative;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.article_content #uses { /*אייקון - שימושים או מטבחים עיקריים*/
+    background-image: url('../images/uses.png');
+    width: 110px;
+    height: 110px;
+}
+
+.article_content #ingredient { /*אייקון - רכיבים או תבלינים ממטבחים*/
+    background-image: url('../images/ingredient.png');
+    width: 110px;
+    height: 110px;
+}
+/*_______________________________*/
+
+/*עיצוב תמונות במאמרים בעמודי תוכן*/
+article .article_images_container {
+    padding: 30px 0px 60px 0px;
+    width: 1170px;
+    margin: 0 auto;
+}
+
+article .article_images {
+    height: 350px;
+    border-radius: 100px;
+    overflow: hidden;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*===5.1 Zaatar Content Page===*/
+
+#zaatar_article .header_content_page .img_content_header {
+    background-image: url('../images/zaatar.jpg');
+}
+
+article .article_images#img_zaatar_4 {
+    background-image: url('../images/zaatar4.png');
+}
+
+div.scroll_img#img_zaatar_1 { /*תמונות אווירה פאראלקס זעתר*/
+    background-image: url('../images/zaatar1.jpg');
+    margin: 0 auto 50px;
+    margin-top: 50px;
+    height: 200px;
+}
+
+div.scroll_img#img_zaatar_2 { /*תמונות אווירה פאראלקס זעתר*/
+    background-image: url('../images/zaatar2.jpg');
+    margin: 0 auto 50px;
+    margin-top: 50px;
+    height: 200px;
+}
+
+.article_content #origin { /*אייקון - ארץ מוצא*/
+    background-image: url('../images/origin.png');
+}
+
+.article_content #tips { /*אייקון - טיפים לבישול*/
+    background-image: url('../images/tip.png');
+}
+
+.article_content #warning { /*אייקון - אזהרות*/
+    background-image: url('../images/warning.png');
+}
+
+.article_content #more_info { /*אייקון - מידע נוסף*/
+    background-image: url('../images/more.png');
+}
+
+.article_content #recipe { /*אייקון - מתכונים מומלצים*/
+    background-image: url('../images/recommend.png');
+}
+
+/*===5.2 Mediterranean Cuisine Content Page===*/
+
+#mediterranean_article .header_content_page .img_content_header {
+    background-image: url('../images/mediterranean.png');
+}
+
+div.scroll_img#img_meditrn_1 { /*תמונות אווירה פאראלקס מטבח ים תיכוני*/
+    background-image: url('../images/salad.jpg');
+    margin: 0 auto 20px;
+    margin-top: 50px;
+    height: 220px;
+}
+
+.article_content #info { /*אייקון - מידע/תיאור */
+    background-image: url('../images/info.png');
+}
+/*_________________________*/
+
+
+/* 6. Other Pages
+======================================== */
+
+/*===6.1 About Page===*/
 
 #about_article header h2 {
     top: 20.5%;
@@ -754,10 +757,9 @@ div.scroll_img {
     margin: 0 auto;
     margin-bottom: 70px;
 }
-
 /*______________________________*/
 
-/**********  עמוד צור קשר  **********/
+/*===6.2 Contact Page===*/
 
 #contact_article .header_content_page .img_content_header {
     background-image: url('../images/contact_img.jpg');
@@ -812,7 +814,6 @@ div.scroll_img {
 #mymail {
     display: block;
 }
-
 
 input#mymailinput {
     margin-right: 55px;
@@ -874,8 +875,7 @@ textarea#mysay {
 }
 /*______________________________*/
 
-
-/**********  עמוד מפת אתר  **********/
+/*===6.3 Site Map Page===*/
 
 #sitemap_article .header_content_page .img_content_header {
     background-image: url('../images/sitemap_img.jpg');
@@ -927,9 +927,9 @@ textarea#mysay {
         color: blue;
     }
 
-    #sitemap_article section ul li .sitemap_active:hover {
-        color: darkblue;
-    }
+        #sitemap_article section ul li .sitemap_active:hover {
+            color: darkblue;
+        }
 
         #sitemap_article section ul li .sitemap_active:active {
             color: darkblue;
@@ -940,11 +940,11 @@ textarea#mysay {
     width: 1200px;
     margin: 0 auto;
 }
-
 /*______________________________*/
 
+/* 7. Footer Styles
+======================================== */
 
-/**********  פוטר  **********/
 footer {
     background-color: #893630;
     margin-top: 50px;
@@ -954,7 +954,6 @@ footer {
 }
 
     footer nav ul.row {
-        /*list-style: none;*/
         width: 1366px;
         margin: 0 auto;
     }
@@ -969,12 +968,8 @@ footer {
             footer nav ul li a {
                 display: block;
                 text-align: center;
-                /*width: 115px;*/
-                /*height: 60px;*/
                 Padding: 17px 0px;
                 font-size: 22px;
-                font-weight: 400;
-                /*margin: 0 auto;*/
                 font-family: Assistant, sans-serif;
                 color: #F5F5F5;
                 letter-spacing: 0.5px;
@@ -993,7 +988,8 @@ footer {
 
 /*______________________________*/
 
-/***********עיצוב מתן קרדיטים לתמונות***********/
+/* 8. Credits Styles
+======================================== */
 
 .article_content .credits {
     display: block;
